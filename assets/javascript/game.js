@@ -1,4 +1,5 @@
-var randomNum = Math.floor((Math.random() * 120) + 19);
+$( document ).ready(function() {
+    var randomNum = Math.floor((Math.random() * 120) + 19);
 console.log(randomNum);
 
 function randomNumGuess() {
@@ -8,12 +9,16 @@ function randomNumGuess() {
 
 randomNumGuess();
 
-function gameStart() {
-	$(".random-number").text(randomNum);
+$("#number-to-guess").text(randomNum);
+
+/*function gameStart() {
+	$(".random-number").html(randomNum);
 
 	$("#red").click(function() {
 		//$(this).
 	})
 }
 
-gameStart();
+gameStart();*/
+});
+
