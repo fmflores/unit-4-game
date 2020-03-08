@@ -4,11 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
     <title>Crystal Guessing Game</title>
 </head>
@@ -28,21 +24,21 @@
 			<span id="number-to-guess"></span>
 		</div>
 		<div class="col-md-1 wins-losses">
-			<p>Wins: 0</p>
-			<p>Losses: 0</p>
+			<p>Wins: <span id="wins-counter"></span></p>
+			<p>Losses: <span id="losses-counter"></span></p>
 		</div>
 	</div> 
 	<div class="row crystal-images">
-		<div class="col-md-1" id="red"><img src="assets/images/red.png" alt="red crystal"></div>
-		<div class="col-md-1" id="diamond"><img src="assets/images/diamond.png" alt="diamond"></div>
-		<div class="col-md-1" id="emerald"><img src="assets/images/green.png" alt="emerald stone"></div>
-		<div class="col-md-1" id="purple"><img src="assets/images/purple.png" alt="purple"></div>
+		<div class="col-md-1" id="red"><img class="crystal-image" src="assets/images/red.png" alt="red crystal"></div>
+		<div class="col-md-1" id="diamond"><img class="crystal-image" src="assets/images/diamond.png" alt="diamond"></div>
+		<div class="col-md-1" id="emerald"><img class="crystal-image" src="assets/images/green.png" alt="emerald stone"></div>
+		<div class="col-md-1" id="purple"><img class="crystal-image" src="assets/images/purple.png" alt="purple"></div>
 	</div>
 	<div class="col-md-4 total-score">
 		<p>Your total score is: </p> 
 	</div>
 	<div class="col-md-4 guessed-score">
-		<p>0</p>
+		<p id="total-score-counter"></p>
 	</div>
 </body>
 
