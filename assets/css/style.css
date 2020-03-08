@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("../images/bush/bush.png");
+}
+
+p {
+	padding: 2% 0% 2% 0%;
+	font-weight: bold;
+}
+
+.head-div h1 {
+	display: inline-block;
+	background-color: orange;
+	color: white;
+	padding-top: 5%;
+	margin-top: 2%;
+	}
+
+.content-div {
+	background-color: #fff7e6;
+	color: green;
+	padding-bottom: 10%;
+}
+
